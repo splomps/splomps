@@ -1,0 +1,138 @@
+main {
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-bottom: 10%;
+}
+
+body {
+    font-family:
+    Futura, Helvetica, Arial, sans-serif;
+    background-image: url(/images/background.png); 
+    background-repeat: no-repeat;                   
+    background-size: cover;              
+    background-position: center;                  
+    background-attachment: fixed;
+    overflow: hidden;
+    position: absolute;                                  
+    margin: 0;
+    padding: 0;          
+}
+
+/*.container-fluid { 
+    margin:auto;
+    min-height: 100vh;
+    display: flex;
+    flex-flow: row nowrap; /* shorthand for setting both felx-direction and flex-wrap properties
+    padding: 5px;
+    gap: 10px;
+    justify-content: space-between;
+}*/
+
+.grid-container {
+    display:grid;
+    grid-template-columns: repeat(12, [col-start] 1fr);
+    grid-template-rows: repeat(12, [row-start] 1fr);
+    height: 100vh;
+    /*grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 2fr 0.5fr;
+    min-height:100vh;*/
+}
+
+.menu {
+    width: 100%;
+    height: 100%;
+    justify-self: start;
+    grid-column: 6 / span 12;
+    grid-row: 1 / span 4;
+    object-fit: contain;
+    
+}
+
+.worker {
+    width: 100%;
+    height: 100%;
+    grid-column: 2 / span 4;
+    grid-row: 5 / span 7;
+    justify-self: end;
+    object-fit: contain;
+}
+
+.heater{
+    width: 100%;
+    height: 100%;
+    grid-column: 8 / span 11;
+    grid-row: 5 / span 7;
+    justify-self: end;
+    object-fit: contain;
+}
+
+.counter {
+    grid-area: counter;
+    width: 100vw;
+    height: 100%;
+   /* grid-column: 1 / span 12;
+    grid-row: 11 / span 2;*/
+    object-fit: fill;
+}
+/*#menu {
+    align-self: flex-start;
+    
+}
+#working {
+    /*flex: 1 1 1;  /*grow, shrink, basis
+    align-self: flex-end;
+    flex: 1;
+}
+
+#heater {
+    align-self: flex-end;
+    flex: 2;
+}
+
+
+
+.spacer {
+    flex-grow:1;
+}
+*/
+
+/*.troll:link, .troll:visited {
+    color: blue;
+    background-color: white;
+    padding: 15px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+
+}
+
+.troll:hover, .troll:active{
+    background-color:red;
+}*/
+.heater, .working, #sandwhich { margin: auto;
+}
+
+
+
+
+
+/*transform: scale(1.3,1.3) translate(0px, 300px);*/
+  
+/*top: 40%;
+  bottom: 70%;
+  left: 50%;
+  width: 100%;*/
+
+/*.working {
+    position: relative;
+    transform: scale(1.3, 1.3) translate(60px, 240px);
+}
+*/
+#sandwhich {
+    position: absolute;
+}
+
+#sandwhich:hover {
+    background-color: pink;
+}
