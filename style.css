@@ -254,6 +254,20 @@ body {
         justify-self: end;
 }
 
+  .worker {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    grid-column: 2 / span 2;
+    grid-row: 5 / span 7;
+    justify-content: end;
+    align-self: end;
+    display: block;
+    object-fit: contain;
+    position: absolute;
+    z-index: 1;
+}
+
     .cash_register {
     width: 100%;
     min-width: 370px;
@@ -274,6 +288,8 @@ body {
     object-fit: scale_down;
     z-index: 2;
 }
+
+
 
 
 /*#menu {
